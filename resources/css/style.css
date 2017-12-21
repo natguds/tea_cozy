@@ -1,8 +1,9 @@
 /* Universal Styles */
 
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Helvetica",sans-serif;
   font-size: 22px;
+  text-align: center;
   color: seashell;
   background-color: black;
   opacity: 0.9;
@@ -13,7 +14,10 @@ a {
   color: white;
 }
 
-
+h2, h3, h4 {
+  margin: 0px;
+  padding: 10px;
+}
 /* Header */
 
 header {
@@ -44,14 +48,19 @@ nav span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
 
+.text-content {
+  width: 1200px;
+  background-color: black;
 }
 
 /* Our Mission */
 
 .mission-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 1200px;
@@ -60,30 +69,21 @@ nav span {
   margin-top: 70px;
 }
 
-.mission-container .mission {
-  width: 1200px;
-  text-align: center;
-  background-color: black;
-}
-
 
 /* Tea of the Month */
 
 .month-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 1000px;
+  justify-content: center;
 }
 
-.month-header {
-  text-align: center;
-}
-
-.image-menu {
+.image-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 1000px;
+  height: 700px;
 }
 
 .tea-item img {
@@ -92,50 +92,62 @@ nav span {
   margin: 10px;
 }
 
-.tea-item h4 {
-  text-align: center;
+/* Locations */
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+  height: 500px;
+  background-image: url("../images/img-locations-background.jpg");
 }
 
-/* Locations */
+.locations h2 {
+  margin-bottom: 15px;
+}
 
 .locations-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1200px;
-  height: 500px;
-  background-image: url("../images/img-locations-background.jpg");
-  text-align: center;
 }
 
-.locations-container .downtown {
+.locations p {
+  margin: 40px 0;
+}
+
+.downtown {
   width: 300px;
   margin: 0 20px;
   background-color: black;
+  opacity: 1;
 }
 
-.locations-container .east-bayside {
+.east-bayside {
   width: 300px;
   margin: 0 20px;
   background-color: black;
+  opacity: 1;
 }
 
-.locations-container .oakdale {
+.oakdale {
   width: 300px;
   margin: 0 20px;
   background-color: black;
+  opacity: 1;
 }
 
+/* Contact */
 
+.contact {
+  height: 200px;
+}
 
 /* Footer */
 
-footer .contact {
-  height: 200px;
-  text-align: center;
-}
 
-footer .copyright {
+.copyright {
   text-align: left;
   margin-left: 20px;
 }
