@@ -12,6 +12,7 @@ body {
 
 a {
   color: white;
+  text-decoration: underline;
 }
 
 h2, h3, h4 {
@@ -64,7 +65,7 @@ nav span {
   justify-content: center;
   align-items: center;
   width: 1200px;
-  height: 700px;
+  height: 770px;
   background-image: url("../images/img-mission-background.jpg");
   margin-top: 70px;
 }
@@ -76,20 +77,20 @@ nav span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 1000px;
+  height: 700px;
 }
 
 .image-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1000px;
-  height: 700px;
 }
 
 .tea-item img {
   width: 300px;
   height: 200px;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
 }
 
 /* Locations */
@@ -113,26 +114,12 @@ nav span {
   align-items: center;
 }
 
-.locations p {
-  margin: 40px 0;
-}
-
-.downtown {
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 300px;
-  margin: 0 20px;
-  background-color: black;
-  opacity: 1;
-}
-
-.east-bayside {
-  width: 300px;
-  margin: 0 20px;
-  background-color: black;
-  opacity: 1;
-}
-
-.oakdale {
-  width: 300px;
+  height: 300px;
   margin: 0 20px;
   background-color: black;
   opacity: 1;
